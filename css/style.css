@@ -1,0 +1,151 @@
+/* barlow-regular - latin */
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v5-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/barlow-v5-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/barlow-v5-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/barlow-v5-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/barlow-v5-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/barlow-v5-latin-regular.svg#Barlow") format("svg"); /* Legacy iOS */
+}
+
+/* fraunces-900 - latin */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v10-latin-900.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/fraunces-v10-latin-900.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/fraunces-v10-latin-900.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/fraunces-v10-latin-900.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/fraunces-v10-latin-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/fraunces-v10-latin-900.svg#Fraunces") format("svg"); /* Legacy iOS */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fefcf7;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styling */
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px 20px;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav_item + .nav_item {
+  margin-left: 32px;
+}
+
+.nav_links {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #83888f;
+}
+
+/* Main */
+
+/* hero section styling */
+
+.hero .container {
+  padding: 117px 105px;
+  background-image: url(../img/coffee_hero.png);
+  background-repeat: no-repeat;
+  background-size: 1280px 600px;
+  background-position: center;
+}
+
+.hero_heading {
+  width: 493px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: "Fraunces", Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fefcf7;
+}
+
+.hero_text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  width: 445px;
+}
+
+.button {
+    display: block;
+  width: 217px;
+  padding: 15px;
+  text-align: center;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  background: #66d2cf;
+  border-radius: 6px;
+  text-decoration: none;
+}
