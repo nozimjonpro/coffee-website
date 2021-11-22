@@ -109,8 +109,8 @@ img {
   color: #83888f;
 }
 
-.nav_links:hover{
-    color: #333D4B;
+.nav_links:hover {
+  color: #333d4b;
 }
 
 /* Main */
@@ -455,8 +455,8 @@ img {
   margin-left: 102px;
 }
 
-.footer .nav_links:hover{
-    color: #fefcf7;
+.footer .nav_links:hover {
+  color: #fefcf7;
 }
 
 .social {
@@ -599,37 +599,65 @@ img {
 }
 
 .headquarter_item_second::before {
-    display: block;
-    content: "";
-    width: 52px;
-    height: 50px;
-    margin-bottom: 45px;
-    background-image: url(../about/img/canada.svg);
-    background-repeat: no-repeat;
-    background-size: 52px 50px;
-  }
+  display: block;
+  content: "";
+  width: 52px;
+  height: 50px;
+  margin-bottom: 45px;
+  background-image: url(../about/img/canada.svg);
+  background-repeat: no-repeat;
+  background-size: 52px 50px;
+}
 
-  .headquarter_item_third::before {
-    display: block;
-    content: "";
-    width: 49px;
-    height: 37px;
-    margin-bottom: 45px;
-    background-image: url(../about/img/australia.svg);
-    background-repeat: no-repeat;
-    background-size: 49px 37px;
-  }
+.headquarter_item_third::before {
+  display: block;
+  content: "";
+  width: 49px;
+  height: 37px;
+  margin-bottom: 45px;
+  background-image: url(../about/img/australia.svg);
+  background-repeat: no-repeat;
+  background-size: 49px 37px;
+}
 
-  .continent{
-      margin-bottom: 24px;
-      font-family: 'Fraunces', Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 36px;
-    color: #333D4B;
-  }
+.continent {
+  margin-bottom: 24px;
+  font-family: "Fraunces", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+}
 
-  .continent_info{
-      margin: 0;
-    color: #333D4B;
-  }
+.continent_info {
+  margin: 0;
+  color: #333d4b;
+}
+
+/* Create page styling */
+
+/* Create section */
+
+.create .container {
+  padding: 134px 85px;
+  background-image: url(../create/img/create_hero.png);
+  background-repeat: no-repeat;
+  background-size: 1280px 450px;
+  background-position: center;
+}
+
+.create_intro_heading {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+}
+
+.create_intro_text{
+  width: 445px;
+  margin: 0;
+}
+
+
