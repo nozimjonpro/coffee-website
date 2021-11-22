@@ -43,10 +43,7 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   height: 100%;
-  flex-grow: 1;
   margin: 0;
   padding: 0;
   font-family: "Barlow", Arial, Helvetica, sans-serif;
@@ -54,6 +51,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   color: #fefcf7;
+  background: #f2f2f2;
 }
 
 img {
@@ -110,9 +108,17 @@ img {
 
 /* Main */
 
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+}
+
 /* hero section styling */
 
 .hero .container {
+  margin-bottom: 136px;
   padding: 117px 105px;
   background-image: url(../img/coffee_hero.png);
   background-repeat: no-repeat;
@@ -137,7 +143,7 @@ img {
 }
 
 .button {
-    display: block;
+  display: block;
   width: 217px;
   padding: 15px;
   text-align: center;
@@ -148,4 +154,163 @@ img {
   background: #66d2cf;
   border-radius: 6px;
   text-decoration: none;
+}
+
+/* Cards section styling */
+
+.cards {
+  background-image: url(../img/collection.png);
+  background-repeat: no-repeat;
+  background-size: 1111px 196px;
+  background-position: top 0 center;
+  margin-bottom: 200px;
+}
+
+.cards .container {
+  width: 1111px;
+}
+
+.cards__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transform: translateY(33%);
+}
+
+.cards__item {
+  width: 255px;
+}
+.cards__item + .cards__item {
+  margin-left: 30px;
+}
+
+.cards__item::before {
+  display: block;
+  content: "";
+  width: 255px;
+  height: 193px;
+  margin-bottom: 72px;
+  background-image: url(../img/product.png);
+  background-repeat: no-repeat;
+  background-size: 255px 193px;
+}
+
+.cards__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333d4b;
+}
+
+.cards__text {
+  margin: 0;
+  text-align: center;
+  color: #333d4b;
+}
+
+/* Choice section styling */
+
+.choice .container {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 317px;
+  background-color: #2c343e;
+  border-radius: 10px;
+}
+
+.choice_heading {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: "Fraunces", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #fefcf7;
+}
+
+.choice_text {
+  width: 540px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #fefcf7;
+}
+
+.choice_list{
+    position: absolute;
+    top: 346px;
+left: 85px;
+right: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.choice_item{
+    width: 350px;
+    padding: 48px;
+    background: #0E8784;
+    border-radius: 8px;
+}
+
+.choice_item_first::before{
+    display: block;
+content: '';
+width: 72px;
+height: 72px;
+margin: 0 auto;
+margin-bottom: 56px;
+background-image: url(../img/card3.svg);
+background-repeat: no-repeat;
+}
+
+.choice_item_second::before{
+    display: block;
+content: '';
+width: 72px;
+height: 72px;
+margin: 0 auto;
+margin-bottom: 56px;
+background-image: url(../img/card2.svg);
+background-repeat: no-repeat;
+}
+
+.choice_item_third::before{
+    display: block;
+content: '';
+width: 72px;
+height: 72px;
+margin: 0 auto;
+margin-bottom: 56px;
+background-image: url(../img/card1.svg);
+background-repeat: no-repeat;
+}
+
+.choice_item_heading{
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #FEFCF7;
+}
+
+.choice_item_text{
+   
+    text-align: center;
+color: #FEFCF7;
 }
