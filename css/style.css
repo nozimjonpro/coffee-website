@@ -343,7 +343,7 @@ img {
 .instruction .line::before {
   display: block;
   content: "";
-  width: 730px;
+  width: 70px;
   height: 2px;
   margin-bottom: 82px;
   background-color: #fdd6ba;
